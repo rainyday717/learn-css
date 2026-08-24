@@ -1,0 +1,117 @@
+
+h1{
+    color: orange;
+    /* font-size: 30px;
+    text-align: center; */
+}
+
+.warning{
+    color: red;
+}
+
+/* #main-header{
+    background-color: hotpink;
+} */
+
+body {
+    height: 5000px;
+}
+
+ul{
+    background-color: orange;
+}
+
+.deep-menu{
+    background-color: green;
+}
+
+/* 클래스 딥메뉴 안에 있는 모~~~~~~든 li */
+/* .deep-menu  li{
+    background-color: hotpink;
+} */
+
+/* 클래스 딥메뉴 안에 있는 친자식 li만 선택 */
+.deep-menu > li{
+    background-color: hotpink;
+}
+
+
+/* 어바웃을 선택하여 글자색깔을 흰색(white)로 변경해주세요. */
+.deep-menu > li > a { color: white; }
+
+
+.sibling > p{
+    background-color: orange;
+}
+
+
+.deep-menu, .sibling, .another
+{ background-color: salmon; }
+
+button:not(.primary){
+    background-color: red;
+}
+
+/* 속성 선택자 */
+
+input[type="text"]{
+    border: 1px solid #ccc;
+}
+
+a[target="_blank"] {
+    color: orange;
+}
+
+.register > input[type="submit"]{
+    cursor: pointer;
+}
+
+
+.pseudo{
+    width: 200px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.pseudo :hover{
+    background-color: cyan;
+}
+
+/* pseudo 안에 있는 a에 마우스를 올렸을 때. */
+.pseudo a:hover {
+    color: green;
+}
+
+/* pseudo에 마우스를 올렸을 때 a의 값이 변경. */
+.pseudo:hover > a{
+    color: purple;
+}
+
+.pseudo > a:focus{
+    outline: 2px solid blue;
+}
+
+/* .pseudo > ul > li:nth-child(2),
+.pseudo > ul > li:nth-child(3){
+    background-color: hotpink;
+} */
+
+/* .pseudo > ul > li:nth-child(odd) */
+.pseudo > ul > li:nth-child(even){
+    background-color: hotpink;
+}
+
+
+
+
+.pseudo-element > h2{
+    color: orange;
+}
+
+.pseudo-element > h2::before{
+    content: '⭐';
+}
+
+.pseudo-element > h2::after{
+    content: '❤️';
+}
