@@ -1,0 +1,127 @@
+/* 부모는 크기 설정이 없을 경우 자식들로부터 크기를 상속 받습니다. */
+.box01{
+    border: 2px solid black;
+    font-size: 20px;
+    color: orangered;
+    /* height: 396px; */
+}
+
+.box01 > p{
+    color: dodgerblue;
+}
+
+.box01{
+    background-color: green;
+    width: 300px;
+    height: 500px;
+}
+
+a{
+    color: inherit;
+}
+
+/* <img> 태그
+  - 부모에게 크기를 상속한다.
+  - 사용자에게 정보 제공을 위해서(alt)
+  - 1층에 배치
+  
+  background-img
+   - 크기에 관여하지 않는다.
+   - 정보 제공에 관여하지 않는다.
+   - 이미지가 부모의 크기보다 작을 경우 이미지를 전체 반복.
+   - 이미지의 크기보다 부모의 크기가 작을 경우 이미지를 crop한다.
+   - 지하에 배치*/
+
+
+.box03{
+    width: 500px;
+    height: 500px;
+    border: 1px solid gray;
+    /* background-image: url('../assets/mozzi2.png'); */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 10% 10%; */
+    /* background-position: right top; */
+    /* background-position: center; */
+    /* background-size: 100px 100px; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background: dodgerblue url('../assets/mozzi2.png') center / cover no-repeat;
+    background-attachment: fixed; */
+    background-image: linear-gradient(to right, red, orange,  yellow, green, blue);
+    /* background-image: radial-gradient(circle, red, orange, yellow, green, blue); */
+    /* border-radius: 0 20px 30px 40px; */
+    /* border-bottom: 10px solid transparent; */
+    /* border-right: 10px solid transparent; */
+    /* transition: all .5s; */
+    border-radius: 50%
+}
+
+
+@font-face{
+    font-family: 'pretendard'; /*이름 지정 */
+    src: url(../assets/font/PretendardVariable.ttf) format("truetype"); /* 경로 설정 (포맷은 생략 가능) */
+    font-style: normal;
+    font-weight: 100 900; /* 폰트 두께 설정 */
+    font-display: swap;
+}
+
+.box04{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: "Roboto Condensed", sans-serif;
+    font-weight: 200; */
+    font-family: "pretendard", sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    /* text-align:justify; */
+    /* text-align: center; */
+    text-decoration: underline;
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+    text-underline-offset: 4px;
+    text-transform: capitalize;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 10px; */
+    text-indent: 16px;
+    /* white-space: nowrap; */
+    /* white-space: normal; */
+
+    /* width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+
+    display: -webkit-box;
+    overflow: hidden;
+    /* horizontal veritcal */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+
+    width: 300px;
+    transition: all .5s;
+    /* transform:translate(-5px, -5px); */
+}
+
+
+.box04:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 4px 4px 0 0 #0000006b;
+}
+
+.box06{
+    width: 100%;
+    background-color: salmon;
+    text-shadow: 2px 2px 4px #000000ad;
+    
+    h2{
+        color: white;
+        font-size: 5vw;
+        /* font-size: 5vh; */
+    }
+}
+
+
+/* em은 나 또는 내 부모 기준 */
+

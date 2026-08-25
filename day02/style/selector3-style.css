@@ -1,0 +1,29 @@
+.course-link:hover {color: #ef4444;}
+
+.apply-button:focus{
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+input:checked {
+    accent-color: dodgerblue;
+}
+
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.notice{
+    background-color: transparent;
+    /* background-color: orange; */
+    /* opacity: 0.5; */
+}
+
+.notice::before {
+    content: '📢 ' ;
+}
+
+.external::after {
+    content: '↗';
+}
