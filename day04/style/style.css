@@ -1,0 +1,52 @@
+.boxes{
+ width: 200px;
+ height: 350px;
+ position: absolute;   
+}
+
+.box01{
+    background-color: orange;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.box02{
+    background-color: green;
+    top: 100px;
+    left: 100px;
+}
+
+.box03{
+    background-color: dodgerblue;
+    top: 150px;
+    left: 150px;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    /* → 네 개의 면을 전부 덮겠다는 의미. */
+    background-color: rgba(0, 255, 255, 0.5);
+    z-index: 100;
+    backdrop-filter: blur(3px);
+}
+
+.contents-box{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    button{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}

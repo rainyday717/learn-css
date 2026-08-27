@@ -1,0 +1,59 @@
+.top{
+    height: 1000px;
+}
+
+.orange{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: dodgerblue;
+    }
+
+    .box02{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .box03{
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+    }
+
+    .box04{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -200px;
+    bottom: -200px;
+    
+        .box05{
+            background-color: magenta;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+    }
+
+    .box06{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+.bottom{
+    height: 1000px;
+    background-color: gray;
+}
