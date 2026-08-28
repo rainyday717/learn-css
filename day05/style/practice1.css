@@ -1,0 +1,68 @@
+
+
+header{
+    min-width: 1000px;
+    height: 80px;
+    background-color: gray;
+
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+}
+
+.visual{
+    height: 350px;
+    background-color: dodgerblue;
+
+    position: relative;
+    
+    margin-bottom: 20px;
+}
+
+.content{
+    max-width: 1000px;
+    height: 400px;
+
+
+    margin-inline: auto;
+
+    ul{
+        background-color: hotpink;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        li{
+            width: 314px;
+            height: 400px;
+            background-color: orange;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:nth-child(1),
+            &:nth-child(4){
+                width: 180px;
+                background-color: transparent;
+            }
+
+
+        }
+
+        .box{
+            max-width: 180px;
+            height: 198px;
+            background-color: orange;
+
+
+        }
+    }
+      
+    footer{
+        height: 50px;
+        background-color: gray;
+        }
+}
