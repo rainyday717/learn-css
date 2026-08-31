@@ -1,0 +1,33 @@
+/* 
+    reset
+    브라우저의 모든 속성 제거 (기본값 제거)
+
+    base
+    프로젝트에 필요한 기본값을 설정하는 공간
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Pretendard, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app .card .button{
+    background-color: red;
+}
