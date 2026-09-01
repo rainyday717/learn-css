@@ -1,25 +1,41 @@
-$primary: #2563eb;
+@use '../scss/abstracts/variables' as var;
+@use '../scss/abstracts/mixins' as place;
+@use './components/button';
+@use './components/card';
+
+.course-section{
+    padding: var.$spacing-3xl var.$spacing-lg;
 
 
+    &__inner{
+        width: min(100%, 1120px);
+        margin: 0 auto;
+    }
 
+    &__header{
+        margin-bottom: var.$spacing-2xl; 
+    }
 
-.course-card{
-    padding: 24px;
-    border-radius: 16px;
-    background: white;
+    &__eyebrow{
+        display: inline-block;
+        margin-bottom: var.$spacing-md;
+        color: var.$color-primary;
+        font-weight: 700;
+    }
 
-    &:hover { transform: translateY(-4px);}
-    .title { color: $primary;}
-    .button { background: $primary; color: white;}
+    &__title{
+        margin: 0 0 var.$spacing-md;
+        font-size: clamp(var.$body-2xl, 5vw, var.$body-3xl);
+        font-weight: bold;
+    }
+
+    &__description{
+        max-width: 600px;
+        margin: 0;
+        color: var.$color-muted;
+        font-size: var.$body-md;
+        line-height: 1.5rem;
+    }
 }
 
 
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal{
-    @include flex-center
-}
