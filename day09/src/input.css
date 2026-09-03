@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+    --color-shin: #ff0000;
+}
+
+.text-custom{
+    @apply text-sm font-semibold text-blue-600 mb-3;
+}

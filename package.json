@@ -4,13 +4,17 @@
   "description": "CSS를 학습하는 학습 문서입니다.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch day07/scss:day07/css"    
+    "sass": "sass --watch day07/scss:day07/css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rainyday717/learn-css.git"
   },
-  "keywords": ["css", "scss", "bootstrap"],
+  "keywords": [
+    "css",
+    "scss",
+    "bootstrap"
+  ],
   "author": "범쌤",
   "license": "MIT",
   "type": "commonjs",
@@ -18,7 +22,11 @@
     "url": "https://github.com/rainyday717/learn-css/issues"
   },
   "homepage": "https://github.com/rainyday717/learn-css#readme",
-    "devDependencies": {
+  "devDependencies": {
     "sass": "^1.103.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
   }
 }
