@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Trending Now Practice</title>
+  <link rel="stylesheet" href="../day09/dist/output.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#09090b] text-white">
+  <main class="mx-auto max-w-7xl px-5 py-14 md:px-8">
+    <header>
+      <p class="mb-2 text-purple-300 font-bold text-sm uppercase tracking-[0.2em]">Tailwind CSS · Practice 02</p>
+
+      <h1 class="text-3xl font-black mb-3 tracking-tight md:text-4xl">Trending Now</h1>
+
+      <p class="text-zinc-300 text-sm mb-6 leading-6 md:text-base">첫 번째 Movie Card에서 익힌 패턴을 활용해 여러 개의 콘텐츠 카드를 반응형 목록으로 확장합니다.</p>
+    </header>
+
+    <section>
+      <div class="mb-7 flex justify-between items-end">
+        <div>
+          <p class="mb-2 text-purple-300 font-bold text-sm uppercase tracking-[0.2em]">Solo Practice</p>
+
+          <h2 class="mb-2 text-2xl font-semibold tracking-tight ">지금 인기 있는 음악</h2>
+
+          <p class="text-zinc-300 text-sm mb-4 leading-6">추적추적 비가 내리고 있는 지금, 모두가 듣고 있는 빗 속의 추천곡.</p>
+        </div>
+
+        <a class="text-zinc-300 text-sm mb-4 font-semibold hidden sm:block hover:text-white"
+            href="#">전체 보기 →</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+        <article class="group">
+          <div class="relative aspect-2/3 overflow-hidden rounded-xl">
+             <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                src="https://i.namu.wiki/i/t7WNyyJwCJMGE4hqrGbrTcgC16xpM8opb4cP_0lN0juuW1lvvEcZ6tGMo8cMiXn5BC58Sd1-3arNB-J9EJgj57ExVR2iz4NXleR-msf5FteS2uhm1WLCQpI-qhawLC9S81SNAx7I4TqYlgbODMoXhA.webp" alt="///앨범 표지"/>
+
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+            <div class="absolute left-3 top-3">
+              <span class="rounded bg-red-600 px-2 py-1 text-xs font-black mr-1">TOP 10</span>
+
+              <span class="rounded bg-black/50 px-2 py-1 text-xs font-semibold">HOT</span>
+            </div>
+
+            <div class="absolute bottom-3 left-3">
+              <span class="mb-3 block text-6xl font-black italic leading-none text-white/90 drop-shadow-lg">1</span>
+
+              <div class="opacity-0 translate-y-2 transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <div class="flex gap-3">
+                  <button
+                    class="w-9 h-9 rounded-full bg-white text-zinc-900"
+                    type="button" aria-label="Rainyday 재생">▶</button>
+
+                  <button
+                    class="w-9 h-9 rounded-full border border-zinc-200 text-lg"
+                    type="button" aria-label="Rainyday 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold truncate">비도 오고 그래서(Feat. 신용재)</h3>
+              <span class="text-xs font-bold text-emerald-400">98%</span>
+            </div>
+
+            <div class="mt-1.5 flex flex-area items-center gap-1.5 text-xs">
+              <span>Heize(헤이즈)</span>
+              <span>•</span>
+              <span>2017</span>
+              <span>•</span>
+              <span>R&B SOUL</span>
+            </div>
+
+            <p>리스너 투표, '비 오는 날 생각나는 노래' 중 1위!</p>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="relative aspect-2/3 overflow-hidden rounded-xl">
+             <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                src="https://i.namu.wiki/i/usdwM0gOpkOxRG_HQJ5bpF_oIsvJFOon0QMve08kSJnunPGBxx0DFQEfY-9NbJ1ThF91lINy9IldOHc4XXn2Zb8b8wYvz7uMO3saCMUH6D8rSdlffx-W1OvAZ29Cqedgk0OmrrPv7N_23pb7Ksx8BA.webp" alt="비가오는날엔 앨범 표지"/>
+
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+            <div class="absolute left-3 top-3">
+              <span class="rounded bg-black/50 text-cyan-300 px-2 py-1 text-xs font-black mr-1">Recommend</span>
+            </div>
+
+            <div class="absolute bottom-3 left-3">
+              <span class="mb-3 block text-6xl font-black italic leading-none text-white/90 drop-shadow-lg">2</span>
+
+              <div class="opacity-0 translate-y-2 transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <div class="flex gap-3">
+                  <button
+                    class="w-9 h-9 rounded-full bg-white text-zinc-900"
+                    type="button" aria-label="Rainyday 재생">▶</button>
+
+                  <button
+                    class="w-9 h-9 rounded-full border border-zinc-200 text-lg"
+                    type="button" aria-label="Rainyday 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold truncate">비가 오는 날엔</h3>
+              <span class="text-xs font-bold text-emerald-400">95%</span>
+            </div>
+
+            <div class="mt-1.5 flex flex-area items-center gap-1.5 text-xs">
+              <span>비스트(Beast)</span>
+              <span>•</span>
+              <span>2011</span>
+              <span>•</span>
+              <span>발라드</span>
+            </div>
+
+            <p>기억나니..? 그 시절 우리가 좋아했던 노래.</p>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="relative aspect-2/3 overflow-hidden rounded-xl">
+             <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                src="https://i.namu.wiki/i/p526E-VloAkviqC1OiLAPKbtssZLR3yXmUeC8eVWABJk1D3Lhh4RjUlhc-ZlI3BYcsx4SqPOMoh7NGor6nUo3YMsAfYXWBMjxe5Eh2JvRMxGZ4K8uAFvWsFzAbSe0u_a58Iy99fp2VZy69q4fLh0oQ.webp" alt="Pieces,Part One 앨범 표지"/>
+
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+            <div class="absolute left-3 top-3">
+              <span class="rounded bg-black/50 px-2 py-1 text-xs font-semibold">HOT</span>
+            </div>
+
+            <div class="absolute bottom-3 left-3">
+              <span class="mb-3 block text-6xl font-black italic leading-none text-white/90 drop-shadow-lg">3</span>
+
+              <div class="opacity-0 translate-y-2 transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <div class="flex gap-3">
+                  <button
+                    class="w-9 h-9 rounded-full bg-white text-zinc-900"
+                    type="button" aria-label="Rainyday 재생">▶</button>
+
+                  <button
+                    class="w-9 h-9 rounded-full border border-zinc-200 text-lg"
+                    type="button" aria-label="Rainyday 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold truncate">우산(Feat. 윤하)</h3>
+              <span class="text-xs font-bold text-emerald-400">88%</span>
+            </div>
+
+            <div class="mt-1.5 flex flex-area items-center gap-1.5 text-xs">
+              <span>에픽하이(EPIK HIGH)</span>
+              <span>•</span>
+              <span>2008</span>
+              <span>•</span>
+              <span>팝 랩</span>
+            </div>
+
+            <p>장마철만 되면 돌아오는 불굴의 음악, 불후의 앨범.</p>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="relative aspect-2/3 overflow-hidden rounded-xl">
+             <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                src="https://i.namu.wiki/i/sNro7hvZOBlesALLXAj4NcWTh89bG4ccJue8FoBZHGaxsKCjw-9Lp8fxVpwOto498vs134OKwhWknReaLD_3XKl59n74eoTR9UJ8tzsOr93GbiGMrvN6Cc8OgGkzhvpjXG3nsZqXN7lL9si1pM1SCg.webp" alt="Rainy day 앨범 표지"/>
+
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+            <div class="absolute left-3 top-3">
+              <span class="rounded bg-black/50 px-2 py-1 text-xs font-semibold">NEW</span>
+            </div>
+
+            <div class="absolute bottom-3 left-3">
+              <span class="mb-3 block text-6xl font-black italic leading-none text-white/90 drop-shadow-lg">4</span>
+
+              <div class="opacity-0 translate-y-2 transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <div class="flex gap-3">
+                  <button
+                    class="w-9 h-9 rounded-full bg-white text-zinc-900"
+                    type="button" aria-label="Rainyday 재생">▶</button>
+
+                  <button
+                    class="w-9 h-9 rounded-full border border-zinc-200 text-lg"
+                    type="button" aria-label="Rainyday 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold truncate">Rainy day(Feat. ASH Island, Skinny Brown)</h3>
+              <span class="text-xs font-bold text-emerald-400">87%</span>
+            </div>
+
+            <div class="mt-1.5 flex flex-area items-center gap-1.5 text-xs">
+              <span>PATEKO</span>
+              <span>•</span>
+              <span>2020</span>
+              <span>•</span>
+              <span>감성힙합</span>
+            </div>
+
+            <p>아는 사람만 아는, 비 오는 날의 숨겨진 스테디셀러.</p>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="relative aspect-2/3 overflow-hidden rounded-xl">
+             <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                src="https://i.namu.wiki/i/Y0KtdfofcyAoLLYLdirTNLfvPDd13QpTnlOz9Nsl8P2JiKymruNbiM9i8eNFkd3O-4_-QjexxJfc0hv3qBlHTf4vAUdWmob0cmh3dGFASf5HHJJwfzo9PZwrcVLy2u3mhgqe0Y4aF4tJhp4IExsthQ.webp" alt="슬기로운 의사생활 시즌2 OST Part1 비와 당신 앨범 표지"/>
+
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+            <div class="absolute left-3 top-3">
+              <span class="rounded bg-black/50 px-2 py-1 text-xs font-semibold">NEW</span>
+            </div>
+
+            <div class="absolute bottom-3 left-3">
+              <span class="mb-3 block text-6xl font-black italic leading-none text-white/90 drop-shadow-lg">5</span>
+
+              <div class="opacity-0 translate-y-2 transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <div class="flex gap-3">
+                  <button
+                    class="w-9 h-9 rounded-full bg-white text-zinc-900"
+                    type="button" aria-label="Rainyday 재생">▶</button>
+
+                  <button
+                    class="w-9 h-9 rounded-full border border-zinc-200 text-lg"
+                    type="button" aria-label="Rainyday 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold truncate">비와 당신</h3>
+              <span class="text-xs font-bold text-emerald-400">84%</span>
+            </div>
+
+            <div class="mt-1.5 flex flex-area items-center gap-1.5 text-xs">
+              <span>이무진</span>
+              <span>•</span>
+              <span>2021</span>
+              <span>•</span>
+              <span>발라드</span>
+            </div>
+
+            <p>전설의 곡이 리메이크되어 돌아왔다!</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

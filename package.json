@@ -4,7 +4,8 @@
   "description": "CSS를 학습하는 학습 문서입니다.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch day07/scss:day07/css"
+    "sass": "sass --watch day07/scss:day07/css",
+    "tw": "tailwindcss/cli -i ./day09/src/input.css -o ./day09/dist/output.css --watch"
   },
   "repository": {
     "type": "git",
